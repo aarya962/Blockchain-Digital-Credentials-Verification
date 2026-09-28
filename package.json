@@ -1,19 +1,21 @@
 {
-  "name": "decentralized-identity-blockchain",
-  "version": "1.0.0",
+  "name": "decentralized-identity-frontend",
   "private": true,
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "compile": "hardhat compile",
-    "test": "hardhat test",
-    "node": "hardhat node",
-    "deploy": "hardhat run scripts/deploy.js --network localhost"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "ethers": "5.7.2",
+    "qrcode.react": "3.1.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@nomiclabs/hardhat-ethers": "2.2.3",
-    "@nomiclabs/hardhat-waffle": "2.0.6",
-    "chai": "4.5.0",
-    "ethereum-waffle": "4.0.10",
-    "ethers": "5.7.2",
-    "hardhat": "2.26.3"
+    "@vitejs/plugin-react": "4.3.4",
+    "vite": "6.1.0"
   }
 }
